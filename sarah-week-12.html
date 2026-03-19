@@ -8,12 +8,11 @@
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --sage:#7C9A7E;--sage-light:#A8C2AA;--sage-pale:#EBF2EB;--sage-dark:#5A7A5C;
-  --cream:#FAF7F2;--cream-dark:#F0EBE3;
-  --forest:#2C3E2D;--forest-mid:#3D5740;
+  --sage:#7C9A7E;--sage-light:#A8C2AA;--sage-pale:#EBF2EB;
+  --cream:#FAF7F2;--forest:#2C3E2D;
   --gold:#C9A96E;--gold-light:#E8D5A8;--gold-pale:#F5EDD8;
   --text-dark:#1A2B1B;--text-mid:#4A5E4B;--text-muted:#7A8E7B;
-  --white:#FFFFFF;--border:rgba(124,154,126,0.18);
+  --border:rgba(124,154,126,0.18);
 }
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-dark);min-height:100vh;overflow-x:hidden}
@@ -25,11 +24,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-d
 .hero-week{font-family:'Playfair Display',serif;font-size:clamp(4rem,12vw,7rem);font-weight:500;color:white;line-height:1;letter-spacing:-0.03em;animation:fadeUp 0.6s ease 0.1s both}
 .hero-week span{color:var(--gold)}
 .hero-name{font-family:'Playfair Display',serif;font-size:clamp(1.1rem,3vw,1.5rem);font-style:italic;color:rgba(255,255,255,0.7);margin-top:0.6rem;margin-bottom:1.5rem;animation:fadeUp 0.6s ease 0.2s both}
-.hero-size{display:inline-flex;align-items:center;gap:0.6rem;background:var(--gold);color:var(--forest);border-radius:2rem;padding:0.55rem 1.4rem;font-size:0.85rem;font-weight:500;letter-spacing:0.02em;animation:fadeUp 0.6s ease 0.3s both}
+.hero-size{display:inline-flex;align-items:center;gap:0.6rem;background:var(--gold);color:var(--forest);border-radius:2rem;padding:0.55rem 1.4rem;font-size:0.85rem;font-weight:500;animation:fadeUp 0.6s ease 0.3s both}
 .hero-weeks-left{margin-top:1.2rem;font-size:0.78rem;font-weight:300;color:rgba(255,255,255,0.45);letter-spacing:0.06em;animation:fadeUp 0.6s ease 0.35s both}
 .milestone-banner{background:var(--gold);padding:1rem 2rem;text-align:center}
 .milestone-text{font-family:'Playfair Display',serif;font-size:1rem;color:var(--forest);font-weight:500}
-.progress-wrap{background:white;padding:1.8rem 2rem;border-bottom:1px solid var(--border);animation:fadeUp 0.6s ease 0.4s both}
+.progress-wrap{background:white;padding:1.8rem 2rem;border-bottom:1px solid var(--border)}
 .progress-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.8rem}
 .progress-title{font-size:0.72rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted)}
 .progress-count{font-family:'Playfair Display',serif;font-size:0.9rem;color:var(--forest)}
@@ -86,7 +85,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-d
 .card:nth-child(4){animation-delay:0.25s}
 .card:nth-child(5){animation-delay:0.3s}
 .card:nth-child(6){animation-delay:0.35s}
-@media(max-width:600px){.hero{min-height:48vh;padding:3rem 1.5rem 3.5rem}.main{padding:1.5rem 1rem 4rem}.card{padding:1.5rem}.baby-stat-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.hero{min-height:48vh;padding:3rem 1.5rem 3.5rem}.main{padding:1.5rem 1rem 4rem}.card{padding:1.5rem}}
 </style>
 </head>
 <body>
@@ -99,8 +98,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-d
       <path d="M900 250 C900 250 980 170 980 250 C980 330 900 380 900 380 C900 380 820 330 820 250 C820 170 900 250 900 250Z" stroke="#A8C2AA" stroke-width="0.6"/>
       <circle cx="200" cy="400" r="200" stroke="#A8C2AA" stroke-width="0.5"/>
       <circle cx="200" cy="400" r="120" stroke="#A8C2AA" stroke-width="0.5"/>
-      <path d="M100 50 Q200 150 150 300 Q100 450 200 500" stroke="#A8C2AA" stroke-width="0.5"/>
-      <path d="M300 0 Q250 100 300 200 Q350 300 280 450" stroke="#A8C2AA" stroke-width="0.5"/>
     </svg>
   </div>
   <div class="hero-badge"><div class="hero-badge-dot"></div>Pregnancy Journey Companion</div>
@@ -140,7 +137,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-d
       <div class="baby-stat"><div class="baby-stat-label">Weight</div><div class="baby-stat-value">14 grams</div></div>
       <div class="baby-stat"><div class="baby-stat-label">Trimester</div><div class="baby-stat-value">First</div></div>
     </div>
-    <div class="baby-desc">This week, your baby’s facial features are becoming more defined, including the formation of their ears and nose. Tiny tooth buds are developing beneath the gums, setting the stage for their very first smile! Their fingers and toes are separating, and they are beginning to move more, though you may not feel it just yet.</div>
+    <div class="baby-desc">Your baby's organs are starting to operate on their own such as the kidneys and intestines. This week marks a significant growth spurt, and tiny bones are forming in the arms and legs. The facial features are becoming more recognizable as the eyes and ears continue to develop.</div>
   </div>
   <div class="card">
     <div class="card-header">
@@ -161,43 +158,43 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-d
       <div class="meal-row">
         <div class="meal-day">TUE</div>
         <div class="meal-items">
-          <div class="meal-name">Quinoa salad with chickpeas, cherry tomatoes, and cucumber</div>
-          <div class="meal-detail">Provides protein and fiber for energy and digestion.</div>
+          <div class="meal-name">Grilled chicken salad with mixed greens and avocado</div>
+          <div class="meal-detail">Packed with protein and healthy fats for energy.</div>
         </div>
       </div>
       <div class="meal-row">
         <div class="meal-day">WED</div>
         <div class="meal-items">
-          <div class="meal-name">Grilled chicken breast with steamed broccoli and sweet potatoes</div>
-          <div class="meal-detail">Packed with essential vitamins and minerals to support your health.</div>
+          <div class="meal-name">Quinoa bowl with black beans, corn, and diced peppers</div>
+          <div class="meal-detail">High in fiber and nutrients essential for digestion.</div>
         </div>
       </div>
       <div class="meal-row">
         <div class="meal-day">THU</div>
         <div class="meal-items">
-          <div class="meal-name">Oatmeal topped with sliced banana and a sprinkle of cinnamon</div>
-          <div class="meal-detail">Great source of fiber and potassium to maintain energy levels.</div>
+          <div class="meal-name">Whole grain pasta with marinara sauce and sautéed vegetables</div>
+          <div class="meal-detail">A delicious way to incorporate vitamins and minerals.</div>
         </div>
       </div>
       <div class="meal-row">
         <div class="meal-day">FRI</div>
         <div class="meal-items">
-          <div class="meal-name">Baked salmon with brown rice and asparagus</div>
-          <div class="meal-detail">Omega-3 fatty acids support baby's brain development.</div>
+          <div class="meal-name">Oven-baked salmon with sweet potato</div>
+          <div class="meal-detail">Full of omega-3 fatty acids for healthy brain development.</div>
         </div>
       </div>
       <div class="meal-row">
         <div class="meal-day">SAT</div>
         <div class="meal-items">
-          <div class="meal-name">Vegetable stir-fry with tofu over jasmine rice</div>
-          <div class="meal-detail">A colorful variety of vegetables provide vital nutrients and antioxidants.</div>
+          <div class="meal-name">Chickpea and vegetable stir-fry with brown rice</div>
+          <div class="meal-detail">Great source of protein and antioxidants.</div>
         </div>
       </div>
       <div class="meal-row">
         <div class="meal-day">SUN</div>
         <div class="meal-items">
-          <div class="meal-name">Smoothie bowl with spinach, mixed berries, and almond milk</div>
-          <div class="meal-detail">A delicious way to load up on vitamins and hydration.</div>
+          <div class="meal-name">Fruit smoothie with yogurt and spinach</div>
+          <div class="meal-detail">A tasty blend that's rich in calcium and vitamins.</div>
         </div>
       </div></div>
   </div>
@@ -214,21 +211,21 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-d
         <div class="symptom-dot"></div>
         <div>
           <div class="symptom-name">Nausea</div>
-          <div class="symptom-tip">Try eating smaller, more frequent meals to help manage nausea.</div>
+          <div class="symptom-tip">Try ginger tea or crackers to ease your stomach.</div>
         </div>
       </div>
       <div class="symptom-item">
         <div class="symptom-dot"></div>
         <div>
           <div class="symptom-name">Fatigue</div>
-          <div class="symptom-tip">Make sure to rest as much as you can and consider short naps during the day.</div>
+          <div class="symptom-tip">Take short breaks throughout the day to recharge.</div>
         </div>
       </div>
       <div class="symptom-item">
         <div class="symptom-dot"></div>
         <div>
-          <div class="symptom-name">Hormonal changes</div>
-          <div class="symptom-tip">Stay hydrated and practice relaxation techniques like deep breathing to help with mood swings.</div>
+          <div class="symptom-name">Mood Swings</div>
+          <div class="symptom-tip">Practice deep breathing or gentle yoga to help maintain emotional balance.</div>
         </div>
       </div></div>
   </div>
@@ -241,12 +238,12 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-d
       </div>
     </div>
     <div class="partner-greeting">Dear your partner,</div>
-    <div class="partner-body">Hey John, this week marks a wonderful milestone as Sarah's pregnancy enters the second trimester! Your little one is growing and developing rapidly, so keep encouraging her with kind words and support. A simple gesture, like offering to make her favorite snack, can mean the world to Sarah right now.</div>
+    <div class="partner-body">Hey John, this week is particularly special as Sarah's baby is growing rapidly, and the foundation for important organs is being laid down. Support Sarah by encouraging her to relax and enjoy this milestone, perhaps even joining her for some nurturing activities together. Your presence can make a huge difference in her well-being as she navigates the first trimester.</div>
     <div class="partner-sign">With warmth, your care team 🌿</div>
   </div>
   <div class="card affirmation-card">
     <div class="card-icon">✨</div>
-    <div class="affirmation-quote">You are doing an amazing job, Sarah, and your body is miraculous!</div>
+    <div class="affirmation-quote">You are doing an incredible job, Sarah, and your strength shines through!</div>
     <div class="affirmation-sub">Your weekly affirmation · Week 12</div>
   </div>
 </div>
